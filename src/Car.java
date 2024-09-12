@@ -14,6 +14,12 @@ public class Car {
         this.year = year;
     }
 
+    // Copy Constructor (custom)
+    public Car(Car car) {
+        this.model = car.model;
+        this.year = car.year;
+    }
+
     // Method to display car info
     public void displayInfo() {
         System.out.println("Model: " + model + ", Year: " + year);
